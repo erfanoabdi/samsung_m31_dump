@@ -1,0 +1,13 @@
+# m31nsxx-user 10 QP1A.190711.020 M315FXXU1ATG2 release-keys
+- manufacturer: 
+- platform: universal9611
+- codename: m31
+- flavor: m31nsxx-user
+- release: 10
+- id: QP1A.190711.020
+- incremental: M315FXXU1ATG2
+- tags: release-keys
+- fingerprint: samsung/m31nsxx/m31:10/QP1A.190711.020/M315FXXU1ATG2:user/release-keys
+- brand: samsung
+- branch: m31nsxx-user-10-QP1A.190711.020-M315FXXU1ATG2-release-keys
+- repo: samsung_m31_dump

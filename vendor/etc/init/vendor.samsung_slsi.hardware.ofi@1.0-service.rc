@@ -1,0 +1,4 @@
+service slsi-ofi-1-0 /vendor/bin/hw/vendor.samsung_slsi.hardware.ofi@1.0-service
+    class hal
+    user cameraserver
+    group camera

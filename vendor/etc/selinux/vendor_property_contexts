@@ -1,0 +1,213 @@
+#line 1 "vendor/samsung/system/sepolicy/samsung/property_contexts"
+#_VENDOR_OR_ODM_NAMESPACES = [ 
+#             "ctl.odm.", 
+#             "ctl.vendor.", 
+#             "ctl.start$odm.", 
+#             "ctl.start$vendor.", 
+#             "ctl.stop$odm.", 
+#             "ctl.stop$vendor.", 
+#             "ro.boot.", 
+#             "ro.hardware.", 
+#             "ro.odm.", 
+#             "ro.vendor.", 
+#             "odm.", 
+#             "persist.odm.", 
+#             "persist.vendor.", 
+#             "vendor." 
+#     ]
+
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23265980
+# change from vendor_bluetooth_prop to bluetooth_prop : https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2643
+# change from bluetooth_prop to wifi_log_prop : https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2875
+vendor.bluetooth_fw_ver                     u:object_r:wifi_log_prop:s0
+
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23332597
+persist.vendor.nfc.log.index                u:object_r:vendor_nfc_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23343491
+vendor.debug.egl.                                u:object_r:vendor_debug_egl_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23344749
+vendor.tzdaemon                u:object_r:vendor_tzdaemon_prop:s0
+vendor.secureos.               u:object_r:vendor_secureos_prop:s0
+vendor.tzts_daemon             u:object_r:vendor_tztsdaemon_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23365202/?page=1
+vendor.proxy_daemon             u:object_r:vendor_proxydaemon_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23344683
+vendor.wlandriver.             u:object_r:vendor_wlandriver_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-3015
+# Change from vendor_wlandriver_prop to wifi_prop
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-3183
+vendor.wlandriver.mode             u:object_r:exported_wifi_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23375973
+#vendor.omadm.                                 u:object_r:vendor_omadm_prop:s0
+persist.vendor.sys.spr_hfa_completed          u:object_r:vendor_omadm_prop:s0
+persist.vendor.sys.omadm_hfa_prl              u:object_r:vendor_omadm_prop:s0
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2703
+vendor.omadm.                                 u:object_r:system_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23400249
+# vendor.debug.prerotation.disable                                u:object_r:vendor_debug_egl_prop:s0
+# ro.vendor.graphics.memory                                u:object_r:vendor_debug_egl_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23402289
+vendor.nfc.fw.                                           u:object_r:vendor_nfc_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23610824/
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-631
+persist.vendor.members.                           u:object_r:vendor_members_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-633
+vendor.fips.bssl.post                           u:object_r:vendor_bssl_post_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-912
+# QCOM_DUPLICATED : vendor.fastrpc.                                 u:object_r:vendor_fastrpc_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1135
+ro.vendor.model_suffix                          u:object_r:vendor_model_suffix_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1210
+vendor.wlbtd.                       u:object_r:vendor_wlbtd_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1266
+vendor.npu.usr_drv.log_mask          u:object_r:sec_camera_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-752
+persist.vendor.zit.      		u:object_r:vendor_zygoteinit_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1475
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2691
+ro.boot.activatedid      		u:object_r:exported_system_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1510
+vendor.camera.motor.service                       u:object_r:vendor_camera_motor_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-1875
+vendor.dolby.                     u:object_r:dolby_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2396
+ro.boot.dram_info      		u:object_r:boot_dram_info_prop:s0
+ro.boot.force_upload      		u:object_r:boot_force_upload_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2479
+vendor.mdlogger.Running            u:object_r:debug_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2802
+ro.vendor.radio.            u:object_r:vendor_radio_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2641 / SEANDROID-3540
+vendor.ro.security.vaultkeeper.        u:object_r:sec_vaultkeeper_prop:s0
+vendor.security.vaultkeeper.        u:object_r:sec_vaultkeeper_prop:s0
+ro.vendor.security.vaultkeeper.		u:object_r:sec_vaultkeeper_prop:s0
+vendor.security.cass.                       u:object_r:sec_cass_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2963
+ro.vendor.multisim.                       u:object_r:vendor_radio_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-3059
+vendor.sbtvd.service.recovery                       u:object_r:exported_system_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-3079
+vendor.seHal.init                         u:object_r:vendor_sehal_init_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-3088
+persist.vendor.runtime_native.              u:object_r:exported_system_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-3193
+vendor.display.sf.                                    u:object_r:vendor_display_sf_prop:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-3467
+vendor.sys.mobicoredaemon.      u:object_r:mobicore_prop:s0
+
+#line 1 "vendor/samsung/system/sepolicy/BSP/slsi/common/property_contexts"
+##########################
+# property service keys
+#
+#
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23315013
+vendor.cbd.rfs_check_done                   u:object_r:vendor_rild_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23443555
+vendor.cbd.                                 u:object_r:vendor_cbd_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/hub/site/seandroid/board/P_review_request/view/23402289
+vendor.TEEGRIS.                             u:object_r:vendor_teegris_prop:s0
+
+# http://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2351
+vendor.wlan.driver.version       u:object_r:vendor_wifi_version:s0
+vendor.wlan.firmware.version     u:object_r:vendor_wifi_version:s0
+
+# https://mobilerndhub.sec.samsung.net/its/browse/SEANDROID-2790
+vendor.teegris.							u:object_r:vendor_teegris_prop:s0
+
+#line 1 "device/samsung/sepolicy/common/property_contexts"
+# Reference: /system/sepolicy/private/property_contexts
+# # Common default properties for vendor and odm.
+# init.svc.odm.           u:object_r:vendor_default_prop:s0
+# init.svc.vendor.        u:object_r:vendor_default_prop:s0
+# ro.hardware.            u:object_r:vendor_default_prop:s0
+# ro.odm.                 u:object_r:vendor_default_prop:s0
+# ro.vendor.              u:object_r:vendor_default_prop:s0
+# odm.                    u:object_r:vendor_default_prop:s0
+# persist.odm.            u:object_r:vendor_default_prop:s0
+# persist.vendor.         u:object_r:vendor_default_prop:s0
+# vendor.                 u:object_r:vendor_default_prop:s0
+
+# for rild
+#SEC_DUPLICATE : persist.vendor.debug_level       u:object_r:vendor_rild_prop:s0
+#SEC_DUPLICATE : persist.vendor.ril.              u:object_r:vendor_rild_prop:s0
+#SEC_DUPLICATE : vendor.radio.ril.                u:object_r:vendor_rild_prop:s0
+#SEC_DUPLICATE : vendor.sys.rild_reset            u:object_r:vendor_rild_prop:s0
+#SEC_DUPLICATE : vendor.ril.                      u:object_r:vendor_rild_prop:s0
+#SEC_DUPLICATE : vendor.cbd.                      u:object_r:vendor_rild_prop:s0
+
+# for cbd
+persist.vendor.cbd.              u:object_r:vendor_rild_prop:s0
+#SEC_DUPLICATE : vendor.cbd.                      u:object_r:vendor_rild_prop:s0
+
+# for ims service
+#persist.vendor.config.ims.       u:object_r:vendor_ims_prop:s0
+
+# for silentlog
+persist.vendor.dev.silentlog     u:object_r:vendor_slog_prop:s0
+persist.vendor.dev.silentlog.    u:object_r:vendor_slog_prop:s0
+
+# for camera hal
+persist.vendor.sys.camera.       u:object_r:vendor_camera_prop:s0
+persist.vendor.hifills.          u:object_r:vendor_camera_prop:s0
+persist.vendor.dualCam.          u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.           u:object_r:vendor_camera_prop:s0
+vendor.hal.camera.               u:object_r:vendor_camera_prop:s0
+
+# more vendor properties
+ro.vendor.ddk.set.afbc              u:object_r:vendor_default_prop:s0
+ro.vendor.wfdsupport              u:object_r:vendor_default_prop:s0
+ro.vendor.cscsupported  u:object_r:vendor_default_prop:s0
+vendor.sys.mobicoredaemon.enable  u:object_r:vendor_mobicoredaemon_prop:s0
+# SEC_DUPLICATED : vendor.wlbtd.tar_files_per_trigger	u:object_r:vendor_wlbtd_prop:s0
+# SEC_DUPLICATED : vendor.wlbtd.version			u:object_r:vendor_wlbtd_prop:s0
+
+# for eden
+ro.vendor.eden.devices                 u:object_r:vendor_eden_prop:s0
+ro.vendor.eden.npu.version.path        u:object_r:vendor_eden_prop:s0
+# vendor default
+vendor.config.               u:object_r:vendor_config_default_prop:s0
+ro.vendor.config.            u:object_r:vendor_ro_config_default_prop:s0
+persist.vendor.config.       u:object_r:vendor_persist_config_default_prop:s0
+vendor.sys.                  u:object_r:vendor_sys_default_prop:s0
+ro.vendor.sys.               u:object_r:vendor_ro_sys_default_prop:s0
+persist.vendor.sys.          u:object_r:vendor_persist_sys_default_prop:s0
+
+# for light video
+vendor.light.video.          u:object_r:vendor_light_video_default_prop:s0
+
+#line 1 "system/sepolicy/reqd_mask/property_contexts"
+# empty property_contexts file - this file is used to generate an empty
+# non-platform property context for devices without any property_contexts
+# customizations.

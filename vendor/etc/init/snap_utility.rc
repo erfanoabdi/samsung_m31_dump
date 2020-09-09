@@ -1,0 +1,29 @@
+on post-fs-data
+# snap gpu kernel
+    mkdir /data/vendor/snap 0755 cameraserver cameraserver
+
+
+# Auto cache
+service snap_utility_64 /vendor/bin/snap_utility_64        
+    class main
+    user cameraserver
+    group cameraserver
+    disabled
+    oneshot
+
+service snap_utility_32 /vendor/bin/snap_utility_32        
+    class main
+    user cameraserver
+    group cameraserver
+    disabled
+    oneshot
+
+
+on property:sys.boot_completed=1
+    start snap_utility_64
+
+
+on property:sys.boot_completed=1
+    start snap_utility_32
+
+

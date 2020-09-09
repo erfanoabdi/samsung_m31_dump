@@ -1,0 +1,7 @@
+
+# for H/W Codec
+getdents64: 1
+
+# to use property in mediacodec
+recvfrom: 1
+sched_setaffinity: 1

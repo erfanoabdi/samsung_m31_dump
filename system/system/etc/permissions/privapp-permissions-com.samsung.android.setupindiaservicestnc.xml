@@ -1,0 +1,6 @@
+<permissions>
+    <privapp-permissions package="com.samsung.android.setupindiaservicestnc">
+		<permission name="android.permission.STATUS_BAR"/>
+		<permission name="android.permission.WRITE_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

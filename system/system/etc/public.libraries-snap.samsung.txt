@@ -1,0 +1,1 @@
+libsnap_hidl.snap.samsung.so

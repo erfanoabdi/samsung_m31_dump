@@ -1,0 +1,22 @@
+service netd /system/bin/netd
+    class main
+    socket dnsproxyd stream 0660 root inet
+# SEC_PRODUCT_FEATURE_KNOX_SUPPORT_NPA {
+    socket napproxyd stream 0660 root inet
+# SEC_PRODUCT_FEATURE_KNOX_SUPPORT_NPA }
+# SEC_PRODUCT_FEATURE_KNOX_SUPPORT_MDM {
+    #if defined(SAMSUNG_MDM_KNOX)
+    socket domainfproxyd stream 0660 root inet
+    #endif
+# SEC_PRODUCT_FEATURE_KNOX_SUPPORT_MDM }
+    socket mdns stream 0660 root system
+    socket fwmarkd stream 0660 root inet
+    socket tcpopd stream 0660 root inet # RNTFIX:: TcpOptimizer
+    socket qosd stream 0660 root radio  # RNTFIX:: QoS
+    socket SecSoftap stream 0660 root  #SEC_PRODUCT_FEATURE_WLAN_SEC_MOBILEAP
+    onrestart restart zygote
+    onrestart restart zygote_secondary
+    # b/121354779: netd itself is not updatable, but on startup it dlopen()s the resolver library
+    # from the DNS resolver APEX. Mark it as updatable so init won't start it until all APEX
+    # packages are ready.
+    updatable

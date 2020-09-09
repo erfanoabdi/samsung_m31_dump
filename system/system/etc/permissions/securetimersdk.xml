@@ -1,0 +1,3 @@
+<permissions>
+    <library name="com.samsung.android.knox.securetimer.sdk" file="/system/framework/securetimersdk.jar"/>
+</permissions>

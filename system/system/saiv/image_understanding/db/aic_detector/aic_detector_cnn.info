@@ -1,0 +1,8 @@
+{
+	"version_id": "v5",
+	"tag" : "5.22",
+	"model_type" : "dsp",
+	"precision" : "qasymm8",
+	"complier" : "ofi1.1.2",
+	"model_path" : "/vendor/saiv/image_understanding/db/aic_detector/aic_detector_cnn.raw"
+}

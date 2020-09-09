@@ -1,0 +1,5 @@
+<permissions>
+    <privapp-permissions package="com.sec.ims">
+        <permission name="android.permission.ACCESS_IMS_CALL_SERVICE"/>
+    </privapp-permissions>
+</permissions>

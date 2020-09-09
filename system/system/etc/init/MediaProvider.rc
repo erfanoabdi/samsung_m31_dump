@@ -1,0 +1,7 @@
+on post-fs-data
+    # sec directory
+    mkdir /data/sec 0771 root vendor_secdir
+    setfacl /data/sec vendor_secdir 07
+    mkdir /data/sec/log
+    chown root log /data/sec/log
+    chmod 2770 /data/sec/log

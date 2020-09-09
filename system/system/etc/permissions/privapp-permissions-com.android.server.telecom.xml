@@ -1,0 +1,6 @@
+<permissions>
+    <privapp-permissions package="com.android.server.telecom">
+        <permission name="com.sec.android.diagmonagent.permission.DIAGMON"/>
+        <permission name="com.sec.android.diagmonagent.permission.PROVIDER"/>
+    </privapp-permissions>
+</permissions>

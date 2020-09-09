@@ -1,0 +1,16 @@
+<!-- stub information for default(high-contrast theme) -->
+
+<stub>
+    <theme>
+        <packageName>com.samsung.Dream_A11y_lowvision</packageName>
+        <title>High contrast theme1</title>
+        <thumbnail>High_contrast_theme_1_preview.jpg</thumbnail>
+        <feature>hct</feature>
+    </theme>
+    <theme>
+        <packageName>com.samsung.High_contrast_theme_II</packageName>
+        <title>High contrast theme2</title>
+        <thumbnail>High_contrast_theme_2_preview.jpg</thumbnail>
+        <feature>hct</feature>
+    </theme>
+</stub>

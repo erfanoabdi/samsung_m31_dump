@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+    <privapp-permissions package="com.samsung.android.app.dressroom">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.SUBSTITUTE_SHARE_TARGET_APP_NAME_AND_ICON"/>
+    </privapp-permissions>
+</permissions>

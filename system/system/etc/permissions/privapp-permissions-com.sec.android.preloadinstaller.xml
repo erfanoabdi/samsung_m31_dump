@@ -1,0 +1,7 @@
+<permissions>
+    <privapp-permissions package="com.sec.android.preloadinstaller">
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.STATUS_BAR"/>
+    </privapp-permissions>
+</permissions>

@@ -1,0 +1,3 @@
+<permissions>
+    <library name="com.samsung.android.knox.analytics.sdk" file="/system/framework/knoxanalyticssdk.jar"/>
+</permissions>

@@ -1,0 +1,257 @@
+<!--
+    type 1 : AccessibilityService
+    type 2 : Accessibility settings
+    type 3 : not Accessibility settings (ex. One-handed mode, blue_light_filter)
+
+    task list :
+        talkback
+        universal_switch
+        assistant_menu
+        sound_detector
+        doorbell_detector
+        interaction_control
+        magnifier_window
+        mute_all_sound
+        air_view
+        palm_motion
+        air_motion_wake_up
+        air_motion_engine
+        one_handed_mode
+        magnification_gesture
+        magnification_navibar
+        remove_animation
+        edge_feed
+        pin_window
+        color_blind
+        color_lens
+        negative_color
+        gray_scale
+        blue_light_filter
+        click_after_pointer_stops
+        tap_duration
+        ignore_repeated_touches
+        direct_access
+        dark_screen
+        camera_quick_launch
+
+-->
+
+
+<task-list>
+    <task name="voice_assistant"
+        type="1"
+        key="secure/enabled_accessibility_services"
+        exclusive="talkback,universal_switch,assistant_menu,sound_detector,doorbell_detector,
+                    interaction_control,magnifier_window,mute_all_sound,
+                    air_motion_wake_up,air_motion_engine,one_handed_mode"
+        needNotify="1" />
+
+    <task name="talkback"
+        type="1"
+        key="secure/enabled_accessibility_services"
+        exclusive="voice_assistant,universal_switch,assistant_menu,sound_detector,doorbell_detector,
+                    interaction_control,magnifier_window,mute_all_sound,
+                    air_motion_wake_up,air_motion_engine,one_handed_mode"
+        needNotify="0" />
+
+    <task name="universal_switch"
+        type="1"
+        key="secure/enabled_accessibility_services"
+        exclusive="talkback,voice_assistant,assistant_menu,interaction_control,magnifier_window,
+                    magnification_gesture,magnification_navibar,remove_animation,palm_motion,air_motion_wake_up,
+                    air_motion_engine,one_handed_mode,edge_feed"
+        needNotify="0" />"
+
+    <task name="assistant_menu"
+        type="2"
+        key="system/assistant_menu"
+        exclusive="talkback,voice_assistant,universal_switch,interaction_control,magnifier_window"
+        needNotify="0" />
+
+    <task name="sound_detector"
+        type="2"
+        key="system/sound_detector"
+        exclusive="talkback,voice_assistant"
+        needNotify="0" />
+
+    <task name="doorbell_detector"
+        type="2"
+        key="system/doorbell_detector"
+        exclusive="talkback,voice_assistant"
+        needNotify="0" />
+
+    <task name="interaction_control"
+        type="2"
+        key="system/access_control_enabled"
+        exclusive="talkback,voice_assistant,universal_switch,assistant_menu,magnifier_window,
+                    magnification_gesture,magnification_navibar,easy_mute,one_handed_mode,pin_window"
+        needNotify="0" />
+
+    <task name="color_blind"
+        type="2"
+        key="system/color_blind"
+        exclusive="color_lens,negative_color,blue_light_filter"
+        needNotify="0" />
+
+    <task name="negative_color"
+        type="2"
+        key="system/high_contrast"
+        exclusive="color_lens,color_blind,blue_light_filter"
+        needNotify="0" />
+
+    <task name="color_lens"
+        type="2"
+        key="secure/color_lens_switch"
+        exclusive="color_blind,negative_color,gray_scale,blue_light_filter"
+        needNotify="0" />
+
+    <task name="gray_scale"
+        type="2"
+        key="system/greyscale_mode"
+        exclusive="color_lens,blue_light_filter"
+        needNotify="0" />
+
+    <task name="magnifier_window"
+        type="2"
+        key="system/finger_magnifier"
+        exclusive="talkback,voice_assistant,universal_switch,assistant_menu,
+                    interaction_control,magnification_gesture,magnification_navibar,
+                    air_view,one_handed_mode"
+        needNotify="0" />
+
+    <task name="magnification_gesture"
+        type="2"
+        key="secure/accessibility_display_magnification_enabled"
+        exclusive="universal_switch,interaction_control,magnifier_window,air_view,one_handed_mode"
+        needNotify="0" />
+
+    <task name="magnification_navibar"
+        type="2"
+        key="secure/accessibility_display_magnification_navbar_enabled"
+        exclusive="universal_switch,interaction_control,magnifier_window,air_view,one_handed_mode"
+        needNotify="0" />
+
+
+    <task name="mute_all_sound"
+        type="2"
+        key="system/all_sound_off"
+        exclusive="talkback,voice_assistant"
+        needNotify="0" />
+
+    <task name="click_after_pointer_stops"
+        type="2"
+        key="secure/accessibility_autoclick_enabled"
+        exclusive="one_handed_mode"
+        needNotify="0" />
+
+    <task name="tap_duration"
+        type="2"
+        key="secure/tap_duration_enabled"
+        exclusive="one_handed_mode"
+        needNotify="1" />
+
+    <task name="ignore_repeated_touches"
+        type="2"
+        key="secure/touch_blocking_enabled"
+        exclusive="one_handed_mode"
+        needNotify="0" />
+
+    <task name="sticky_keys"
+        type="2"
+        key="secure/sticky_keys_enabled"
+        exclusive="one_handed_mode"
+        needNotify="1" />
+
+    <task name="slow_keys"
+        type="2"
+        key="secure/slow_keys_enabled"
+        exclusive="one_handed_mode"
+        needNotify="1" />
+
+    <task name="bounce_keys"
+        type="2"
+        key="secure/bounce_keys_enabled"
+        exclusive="one_handed_mode"
+        needNotify="1" />
+
+    <task name="direct_access"
+        type="2"
+        key="system/direct_access"
+        exclusive="one_handed_mode"
+        needNotify="0" />
+
+    <task name="dark_screen"
+        type="2"
+        key="system/lcd_curtain"
+        exclusive="camera_quick_launch"
+        needNotify="0" />
+
+    <task name="remove_animation"
+        type="2"
+        key="system/remove_animations"
+        exclusive="universal_switch"
+        needNotify="0" />
+
+    <task name="air_motion_wake_up"
+          type="3"
+          key="system/air_motion_wake_up"
+          exclusive="voice_assistant,talkback,universal_switch"
+          needNotify="0" />
+
+    <task name="air_motion_engine"
+          type="3"
+          key="system/air_motion_engine"
+          exclusive="voice_assistant,talkback,universal_switch"
+          needNotify="0" />
+
+    <task name="air_view"
+          type="3"
+          key="system/pen_hovering"
+          exclusive="magnifier_window,magnification_gesture,magnification_navibar"
+          needNotify="0" />
+
+    <task name="blue_light_filter"
+          type="3"
+          key="system/blue_light_filter"
+          exclusive="color_blind,color_lens,negative_color,gray_scale"
+          needNotify="0" />
+
+    <task name="camera_quick_launch"
+          type="3"
+          key="system/double_tab_launch"
+          exclusive="dark_screen"
+          needNotify="0" />
+
+    <task name="edge_feed"
+          type="3"
+          key="system/edge_information_stream"
+          exclusive="universal_switch"
+          needNotify="0" />
+
+    <task name="easy_mute"
+          type="3"
+          key="system/motion_overturn"
+          exclusive="interaction_control"
+          needNotify="0" />
+
+    <task name="one_handed_mode"
+          type="3"
+          key="system/any_screen_enabled"
+          exclusive="voice_assistant,talkback,universal_switch,interaction_control,magnifier_window,
+                    magnification_gesture,magnification_navibar,click_after_pointer_stops,tap_duration,
+                    ignore_repeated_touches,direct_access,sticky_keys,slow_keys,bounce_keys"
+          needNotify="0" />
+
+    <task name="palm_motion"
+          type="3"
+          key="system/surface_palm_swipe"
+          exclusive="universal_switch"
+          needNotify="0" />
+
+    <task name="pin_window"
+          type="3"
+          key="system/lock_to_app_enabled"
+          exclusive="interaction_control"
+          needNotify="0" />
+
+</task-list>

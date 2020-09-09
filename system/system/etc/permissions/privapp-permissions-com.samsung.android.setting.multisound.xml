@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+    <privapp-permissions package="com.samsung.android.setting.multisound">
+        <permission name="android.permission.WRITE_SETTINGS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.BLUETOOTH"/>
+        <permission name="android.permission.BLUETOOTH_ADMIN"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    </privapp-permissions>
+</permissions>

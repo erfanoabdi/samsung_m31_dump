@@ -1,0 +1,3 @@
+# Put library's name only
+libDigitalClockEncoder.aod.samsung.so
+libAnalogClockEncoder.aod.samsung.so

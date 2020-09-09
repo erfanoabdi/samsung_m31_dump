@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2018 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+<permissions>
+    <privapp-permissions package="com.android.systemui">
+        <permission name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.BATTERY_STATS"/>
+        <permission name="android.permission.BIND_APPWIDGET"/>
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+        <permission name="android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST"/>
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
+        <permission name="android.permission.CONNECTIVITY_INTERNAL"/>
+        <permission name="android.permission.CONTROL_KEYGUARD_SECURE_NOTIFICATIONS"/>
+        <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS"/>
+        <permission name="android.permission.CONTROL_VPN"/>
+        <permission name="android.permission.DUMP"/>
+        <permission name="android.permission.GET_APP_OPS_STATS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <permission name="android.permission.MANAGE_DEBUGGING"/>
+        <permission name="android.permission.MANAGE_SENSOR_PRIVACY"/>
+        <permission name="android.permission.MANAGE_USB"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.MASTER_CLEAR"/>
+        <permission name="android.permission.MEDIA_CONTENT_CONTROL"/>
+        <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+        <permission name="android.permission.READ_DREAM_STATE"/>
+        <permission name="android.permission.READ_FRAME_BUFFER"/>
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+        <permission name="android.permission.READ_PHONE_STATE" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.RECEIVE_MEDIA_RESOURCE_USAGE"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
+        <permission name="android.permission.START_ACTIVITY_AS_CALLER"/>
+        <permission name="android.permission.START_TASKS_FROM_RECENTS"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+        <permission name="android.permission.TETHER_PRIVILEGED"/>
+        <permission name="android.permission.UPDATE_APP_OPS_STATS"/>
+        <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="android.permission.WATCH_APPOPS"/>
+        <permission name="android.permission.WRITE_DREAM_STATE"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
+        <permission name="android.permission.CONTROL_DISPLAY_COLOR_TRANSFORMS" />
+        <permission name="android.permission.CHANGE_CONFIGURATION" />        
+        <!-- { Added for Samsung SystemUI -->
+        <!-- { Rune.SYSUI_SUPPORT_KNOX_MONITOR -->
+        <permission name="com.samsung.android.knox.permission.KNOX_SECURITY" />
+        <permission name="com.sec.knox.permission.KEYGUARD_SERVICE" />
+        <!-- } Rune.SYSUI_SUPPORT_KNOX_MONITOR -->
+        <!-- Rune.PWRUI_SUPPORT_COOLDOWN_AND_SAFE_MODE -->
+        <permission name="com.samsung.android.permission.SSRM_NOTIFICATION_PERMISSION" />
+        <!-- Rune.PWRUI_SUPPORT_LOW_BATTERY_DUMP -->
+        <permission name="com.sec.android.app.servicemodeapp.permission.KEYSTRING" />
+        <!-- Rune.STATBAR_SUPPORT_SEC_DATA_ICON -->
+        <permission name="android.permission.READ_PRECISE_PHONE_STATE" />
+        <!-- Rune.KEYGUARD_SUPPORT_SENSOR_PICKUP -->
+        <permission name="com.samsung.permission.SSENSOR"/>
+        <!-- Rune.SECURITY_SUPPORT_FINGERPRINT -->
+        <permission name="android.permission.MANAGE_FINGERPRINT"/>
+        <!-- Rune.SECURITY_SUPPORT_FACE -->
+        <permission name="com.samsung.android.bio.face.permission.MANAGE_FACE"/>
+        <permission name="com.samsung.android.bio.face.permission.USE_FACE"/>
+        <!-- { Rune.SYSUI_SUPPORT_SEC_IMS_MANAGER -->
+        <permission name="com.sec.imsservice.PERMISSION" />
+        <permission name="com.sec.imsservice.READ_IMS_PERMISSION" />
+        <permission name="com.sec.imsservice.WRITE_IMS_PERMISSION" />
+        <!-- } Rune.SYSUI_SUPPORT_SEC_IMS_MANAGER -->
+        <!-- Rune.STATBAR_SUPPORT_S_ROAMIN -->
+        <permission name="com.samsung.android.softsim.permission.RECEIVE" />
+        <!-- } Added for Samsung SystemUI -->
+        <!-- { Added for Knox -->
+        <permission name="android.permission.sec.MDM_AUDIT_LOG"/>
+        <permission name="com.samsung.android.knox.permission.KNOX_AUDIT_LOG"/>
+        <!-- } Added for Knox -->
+		<!-- { Added for KnoxGuard -->
+        <permission name="com.samsung.android.knoxguard.STATUS"/>
+        <!-- } Added for KnoxGuard -->
+        <!-- Rune.STATBAR_USE_NETWORK_SERVER_CONFIG_FOR_5G -->
+        <permission name="com.sec.ims.entitlementconfigservice.READ_ENTITLEMENT_CONFIG_PERMISSION"/>
+        <!-- { Added for NotiStar -->
+	 <permission name="com.samsung.systemui.notilus.permission.ACCESS_DB"/>
+	<!-- } Added for NotiStar -->
+        <!-- { Added for Samsung Capture -->
+        <permission name="com.samsung.android.permission.EXTRACT_SMARTCLIP_DATA"/>
+        <permission name="com.samsung.permission.CAPTURE"/>
+        <permission name="com.samsung.android.permission.SEM_WRITE_CAPTURED_URL"/>
+        <!-- Added for Samsung Capture } -->
+        <!-- { Added for SystemUIBixby2 -->
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
+        <permission name="com.android.quickstep.tasklock.READ"/>
+        <permission name="com.android.quickstep.tasklock.WRITE"/>
+        <!-- Added for SystemUIBixby2 } -->
+        <!-- { Added for searching quick button -->
+        <permission name="com.samsung.android.provider.indexing.permission.ACCESS_PROVIDER"/>
+        <!-- } Added for searching quick button -->
+    </privapp-permissions>
+</permissions>

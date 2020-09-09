@@ -1,0 +1,4 @@
+libapex_jni.media.samsung.so
+libheifcapture_jni.media.samsung.so
+libjpegsq.media.samsung.so
+libsimgp_jni.media.samsung.so

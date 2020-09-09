@@ -1,0 +1,821 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<DefaultGrantPermissions>
+    <version databaseVersion="1" />
+    <package name="com.test.package.name">
+        <permission name="android.permission.name.first" systemfixed="false" />
+        <permission name="android.permission.name.two" systemfixed="false" />
+    </package>
+
+    <!-- ATT HUX and VUX Apps -->
+    <sales-code csc="ATT">
+        <!-- ATT VVM -->
+        <package name="com.samsung.vvm">
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false" />
+            <permission name="android.permission.RECORD_AUDIO" systemfixed="false" />
+            <revoke-permission name="android.permission.READ_CALL_LOG" />
+            <revoke-permission name="android.permission.WRITE_CALL_LOG" />
+            <revoke-permission name="android.permission.WRITE_CONTACTS" />
+            <revoke-permission name="android.permission.RECEIVE_WAP_PUSH" />
+        </package>
+        <!-- ATT QosIndicator -->
+        <package name="com.samsung.qosindicator">
+            <permission name="android.permission.RECEIVE_WAP_PUSH" systemfixed="false" />
+        </package>
+        <!-- New ATT VVM -->
+        <package name="com.samsung.attvvm">
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false" />
+            <permission name="android.permission.RECORD_AUDIO" systemfixed="false" />
+        </package>
+        <!-- Ready2Go (Setup & Transfer) -->
+        <package name="com.synchronoss.dcs.att.r2g">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.CAMERA" systemfixed="false" />
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false" />
+            <permission name="android.permission.WRITE_CONTACTS" systemfixed="false" />
+            <permission name="android.permission.GET_ACCOUNTS" systemfixed="false" />
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.WRITE_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+            <permission name="android.permission.READ_EXTERNAL_STORAGE" systemfixed="false" />
+            <permission name="android.permission.WRITE_EXTERNAL_STORAGE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false" />
+        </package>
+        <!-- ATT All Access -->
+        <package name="com.smartcom">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+        </package>
+        <!-- Remote Support -->
+        <package name="net.aetherpal.device">
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+        </package>
+        <!-- AT&T All Access Baseroot -->
+        <package name="com.smartcomroot">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <!-- AppSelect -->
+        <package name="com.dti.att">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <!-- Att Call Protect -->
+        <package name="com.att.callprotect">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <!-- ATT CMAS -->
+        <package name="com.sec.android.app.cmas">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+        </package>
+    </sales-code>
+
+    <!-- TMO HUX and VUX Apps -->
+    <sales-code csc="TMB">
+        <!-- WHITEPAGES -->
+        <package name="com.whitepages.nameid.tmobile">
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+        </package>
+        <!-- ADaPt -->
+        <package name="com.tmobile.pr.adapt">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+        </package>
+        <!-- MyAccount -->
+        <package name="com.tmobile.pr.mytmobile">
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.USE_SIP" systemfixed="false" />
+            <permission name="android.permission.WRITE_CALL_LOG" systemfixed="false" />
+        </package>
+        <!-- T-Mobile Name ID (Privacy star) -->
+        <package name="com.tmobile.services.nameid">
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+            <permission name="android.permission.WRITE_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_WAP_PUSH" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+        </package>
+    </sales-code>
+
+    <!-- MPCS HUX and VUX Apps -->
+    <sales-code csc="TMK">
+        <!-- ADaPt -->
+        <package name="com.tmobile.pr.adapt">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+        </package>
+        <!-- MetroZone -->
+        <package name="com.metropcs.metrozone">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+			<permission name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION" systemfixed="false" />
+			<permission name="android.permission.SYSTEM_ALERT_WINDOW" systemfixed="false" />
+        </package>
+        <!-- Metro NameID -->
+        <package name="com.privacystar.android.metro">
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+            <permission name="android.permission.WRITE_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_WAP_PUSH" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+        </package>
+        <!-- Metro AppStore -->
+        <package name="com.handmark.metro.launcher">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <!-- MyMetro -->
+        <package name="com.nuance.nmc.sihome.metropcs">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.WRITE_CALL_LOG" systemfixed="false" />
+        </package>
+    </sales-code>
+
+    <!-- AIO HUX and VUX Apps -->
+    <sales-code csc="AIO">
+        <!-- NetWise -->
+        <package name="com.smithmicro.netwise.director.cricket">
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+	<!-- theScoop -->
+        <package name="com.cricketwireless.thescoop">
+            <permission name="android.permission.SYSTEM_ALERT_WINDOW" systemfixed="false" />
+        </package>
+        <!-- Ignite -->
+        <package name="com.dti.cricket">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <!-- AIO CMAS -->
+        <package name="com.sec.android.app.cmas">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+        </package>
+    </sales-code>
+
+    <sales-code csc="VZW">
+        <!-- DTIgnite Buganizer ID: b/24273045 -->
+        <package name="com.LogiaGroup.LogiaDeck">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <revoke-permission name="android.permission.CALL_PHONE" />
+            <revoke-permission name="android.permission.READ_CALL_LOG" />
+            <revoke-permission name="android.permission.WRITE_CALL_LOG" />
+            <revoke-permission name="android.permission.ADD_VOICEMAIL" />
+            <revoke-permission name="android.permission.USE_SIP" />
+            <revoke-permission name="android.permission.PROCESS_OUTGOING_CALLS" />
+        </package>
+		<!-- Caller Name ID Buganizer ID: b/24473944 -->
+		<package name="com.cequint.ecid">
+			<permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+			<permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+			<permission name="android.permission.CALL_PHONE" systemfixed="false" />
+			<permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+			<permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+			<permission name="android.permission.SEND_SMS" systemfixed="false" />
+			<permission name="android.permission.READ_CONTACTS" systemfixed="false" />
+			<permission name="android.permission.WRITE_CONTACTS" systemfixed="false" />
+			<revoke-permission name="android.permission.WRITE_CALL_LOG" />
+			<revoke-permission name="android.permission.ADD_VOICEMAIL" />
+			<revoke-permission name="android.permission.USE_SIP" />
+			<revoke-permission name="android.permission.READ_SMS" />
+			<revoke-permission name="android.permission.RECEIVE_MMS" />
+			<revoke-permission name="android.permission.GET_ACCOUNTS" />
+		</package>
+		<!-- Caller Name ID Buganizer ID: b/24473944 -->
+		<package name="com.vzw.ecid">
+			<permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+			<permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+			<permission name="android.permission.CALL_PHONE" systemfixed="false" />
+			<permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+			<permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+			<permission name="android.permission.SEND_SMS" systemfixed="false" />
+			<permission name="android.permission.READ_CONTACTS" systemfixed="false" />
+			<permission name="android.permission.WRITE_CONTACTS" systemfixed="false" />		
+		</package>
+        <package name="com.telecomsys.directedsms.android.SCG">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.WRITE_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" systemfixed="false" />
+        </package>
+        <package name="com.securityandprivacy.android.verizon.vms">
+            <!-- Verizon Security & Privacy Buganizer ID: b/37101990 -->
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_WAP_PUSH" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.READ_EXTERNAL_STORAGE" systemfixed="false" />
+            <permission name="android.permission.WRITE_EXTERNAL_STORAGE" systemfixed="false" />
+        </package>
+        <package name="com.vzw.hss.myverizon">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false" />
+        </package>
+        <package name="com.motricity.verizon.ssodownloadable">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+        </package>
+        <package name="com.verizon.mips.services">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+            <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" systemfixed="false" />
+        </package>
+        <package name="com.sec.android.app.cmas">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+        </package>
+        <package name="com.vcast.mediamanager">
+            <permission name="android.permission.READ_EXTERNAL_STORAGE" systemfixed="false" />
+            <permission name="android.permission.WRITE_EXTERNAL_STORAGE" systemfixed="false" />
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false" />
+            <permission name="android.permission.WRITE_CONTACTS" systemfixed="false" />
+            <permission name="android.permission.GET_ACCOUNTS" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.WRITE_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+        </package>
+		  <package name="com.samsung.vvm">
+          <!--  Visual Voice Mail (VVM) Buganizer ID: b/24475051 -->
+	<permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+	<permission name="android.permission.CALL_PHONE" systemfixed="false" />
+	<permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+	<permission name="android.permission.WRITE_CALL_LOG" systemfixed="false" />
+	<permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+	<permission name="android.permission.SEND_SMS" systemfixed="false" />
+	<permission name="android.permission.READ_CONTACTS" systemfixed="false" />
+	<permission name="android.permission.WRITE_CONTACTS" systemfixed="false" />
+	<permission name="android.permission.RECEIVE_WAP_PUSH" systemfixed="false" />
+	<permission name="android.permission.READ_SMS" systemfixed="false" />
+        <revoke-permission name="android.permission.RECORD_AUDIO" />
+    </package>
+        <package name="com.qualcomm.ltebc_vzw">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <package name="com.expway.embmsserver">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+ 	    <!-- Verizon OneTalk Buganizer ID: b/111079585 -->
+        <package name="com.verizon.onetalk.dialer">
+			<permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+			<permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+			<permission name="android.permission.WRITE_CALL_LOG" systemfixed="false" />
+			<permission name="android.permission.CALL_PHONE" systemfixed="false" />
+			<permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+			<permission name="android.permission.RECORD_AUDIO" systemfixed="false" />
+			<permission name="android.permission.CAMERA" systemfixed="false" />
+			<permission name="android.permission.READ_CONTACTS" systemfixed="false" />
+			<permission name="android.permission.WRITE_CONTACTS" systemfixed="false" />		
+		</package>
+    </sales-code>	
+
+    <sales-code csc="VPP">
+        <!-- DTIgnite Buganizer ID: b/24273045 -->
+        <package name="com.LogiaGroup.LogiaDeck">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <revoke-permission name="android.permission.CALL_PHONE" />
+            <revoke-permission name="android.permission.READ_CALL_LOG" />
+            <revoke-permission name="android.permission.WRITE_CALL_LOG" />
+            <revoke-permission name="android.permission.ADD_VOICEMAIL" />
+            <revoke-permission name="android.permission.USE_SIP" />
+            <revoke-permission name="android.permission.PROCESS_OUTGOING_CALLS" />
+        </package>
+        <package name="com.vzw.hss.myverizon">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false" />
+        </package>
+        <package name="com.motricity.verizon.ssodownloadable">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+        </package>
+        <package name="com.verizon.mips.services">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+            <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" systemfixed="false" />
+        </package>
+		<package name="com.sec.android.app.cmas">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+        </package>
+		<package name="com.vcast.mediamanager">
+            <permission name="android.permission.READ_EXTERNAL_STORAGE" systemfixed="false" />
+            <permission name="android.permission.WRITE_EXTERNAL_STORAGE" systemfixed="false" />
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false" />
+            <permission name="android.permission.WRITE_CONTACTS" systemfixed="false" />
+            <permission name="android.permission.GET_ACCOUNTS" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.WRITE_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+        </package>
+    </sales-code>
+
+    <!-- Sprint HUX and VUX apps -->
+    <sales-code csc="SPR">
+        <!--Spritn VVM , 25312118@Google Bug ID -->
+        <package name="com.coremobility.app.vnotes">
+            <permission name="android.permission.CALL_PHONE" systemfixed="false"/>
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.READ_SMS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false"/>
+            <permission name="android.permission.SEND_SMS" systemfixed="false"/>
+        </package>
+        <!--  SMF , 26292661@Google Bug ID -->
+        <package name="com.sprint.ms.smf.services">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.CALL_PHONE" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false"/>
+        </package>
+        <!--  Sprint Mobile ID , 26292358@Google Bug ID -->
+        <package name="com.sprint.w.installer">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+        </package>
+        <!-- Spr Caller Name ID , 31337798@Google Bug ID-->
+        <package name="com.cequint.ecid">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false"/>
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false"/>
+            <permission name="android.permission.READ_SMS" systemfixed="false"/>
+            <permission name="android.permission.SEND_SMS" systemfixed="false"/>
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.WRITE_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.GET_ACCOUNTS" systemfixed="false"/>
+        </package>
+        <!-- Spr Caller Name ID2 , 31337798@Google Bug ID-->
+        <package name="com.sprint.ecid">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false"/>
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false"/>
+            <permission name="android.permission.READ_SMS" systemfixed="false"/>
+            <permission name="android.permission.SEND_SMS" systemfixed="false"/>
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.WRITE_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.GET_ACCOUNTS" systemfixed="false"/>
+        </package>
+        <!--  CDM , 70038089@Google Bug ID -->
+        <package name="com.sprint.ms.cdm">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.CALL_PHONE" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false"/>
+        </package>
+
+    </sales-code>
+    <!-- Sprint-Boost HUX and VUX apps -->
+    <sales-code csc="BST">
+        <!--Sprint VVM , 25312118@Google Bug ID -->
+        <package name="com.coremobility.app.vnotes">
+            <permission name="android.permission.CALL_PHONE" systemfixed="false"/>
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.READ_SMS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false"/>
+            <permission name="android.permission.SEND_SMS" systemfixed="false"/>
+        </package>
+        <!-- Sprint MobieleInstaller , 25312834@Google Bug ID -->
+        <package name="com.sprint.ce.updater">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+        </package>
+        <!--  SMF , 26292661@Google Bug ID -->
+        <package name="com.sprint.ms.smf.services">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.CALL_PHONE" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false"/>
+        </package>
+        <!--  Sprint Mobile ID , 26292358@Google Bug ID -->
+        <package name="com.sprint.w.installer">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+        </package>
+        <!-- Spr Caller Name ID , 31337798@Google Bug ID-->
+        <package name="com.cequint.ecid">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false"/>
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false"/>
+            <permission name="android.permission.READ_SMS" systemfixed="false"/>
+            <permission name="android.permission.SEND_SMS" systemfixed="false"/>
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.WRITE_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.GET_ACCOUNTS" systemfixed="false"/>
+        </package>
+        <!-- Spr Caller Name ID2 , 31337798@Google Bug ID-->
+        <package name="com.sprint.ecid">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false"/>
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false"/>
+            <permission name="android.permission.READ_SMS" systemfixed="false"/>
+            <permission name="android.permission.SEND_SMS" systemfixed="false"/>
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.WRITE_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.GET_ACCOUNTS" systemfixed="false"/>
+        </package>
+        <!--  CDM , 70038089@Google Bug ID -->
+        <package name="com.sprint.ms.cdm">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.CALL_PHONE" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false"/>
+        </package>
+
+    </sales-code>
+    <!-- Sprint- Virgin HUX and VUX apps -->
+    <sales-code csc="VMU">
+        <!--Sprint VVM , 25312118@Google Bug ID -->
+        <package name="com.coremobility.app.vnotes">
+            <permission name="android.permission.CALL_PHONE" systemfixed="false"/>
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.READ_SMS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false"/>
+            <permission name="android.permission.SEND_SMS" systemfixed="false"/>
+        </package>
+        <!-- Sprint MobieleInstaller , 25312834@Google Bug ID -->
+        <package name="com.sprint.ce.updater">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+        </package>
+        <!--  SMF , 26292661@Google Bug ID -->
+        <package name="com.sprint.ms.smf.services">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.CALL_PHONE" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false"/>
+        </package>
+        <!--  Sprint Mobile ID , 26292358@Google Bug ID -->
+        <package name="com.sprint.w.installer">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+        </package>
+        <!-- Spr Caller Name ID , 31337798@Google Bug ID-->
+        <package name="com.cequint.ecid">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false"/>
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false"/>
+            <permission name="android.permission.READ_SMS" systemfixed="false"/>
+            <permission name="android.permission.SEND_SMS" systemfixed="false"/>
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.WRITE_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.GET_ACCOUNTS" systemfixed="false"/>
+        </package>
+        <!-- Spr Caller Name ID2 , 31337798@Google Bug ID-->
+        <package name="com.sprint.ecid">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false"/>
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false"/>
+            <permission name="android.permission.READ_SMS" systemfixed="false"/>
+            <permission name="android.permission.SEND_SMS" systemfixed="false"/>
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.WRITE_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.GET_ACCOUNTS" systemfixed="false"/>
+        </package>
+        <!--  CDM , 70038089@Google Bug ID -->
+        <package name="com.sprint.ms.cdm">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.CALL_PHONE" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false"/>
+        </package>
+
+    </sales-code>
+    <!-- Sprint- XAS and PPD HUX and VUX apps -->
+    <sales-code csc="XAS">
+        <!--Sprint VVM , 25312118@Google Bug ID -->
+        <package name="com.coremobility.app.vnotes">
+            <permission name="android.permission.CALL_PHONE" systemfixed="false"/>
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.READ_SMS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false"/>
+            <permission name="android.permission.SEND_SMS" systemfixed="false"/>
+        </package>
+        <!-- Sprint MobieleInstaller , 25312834@Google Bug ID -->
+        <package name="com.sprint.ce.updater">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+        </package>
+        <!--  SMF , 26292661@Google Bug ID -->
+        <package name="com.sprint.ms.smf.services">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.CALL_PHONE" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false"/>
+        </package>
+        <!--  Sprint Mobile ID , 26292358@Google Bug ID -->
+        <package name="com.sprint.w.installer">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+        </package>
+        <!-- Spr Caller Name ID , 31337798@Google Bug ID-->
+        <package name="com.cequint.ecid">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false"/>
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false"/>
+            <permission name="android.permission.READ_SMS" systemfixed="false"/>
+            <permission name="android.permission.SEND_SMS" systemfixed="false"/>
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.WRITE_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.GET_ACCOUNTS" systemfixed="false"/>
+        </package>
+        <!-- Spr Caller Name ID2 , 31337798@Google Bug ID-->
+        <package name="com.sprint.ecid">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false"/>
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false"/>
+            <permission name="android.permission.RECEIVE_MMS" systemfixed="false"/>
+            <permission name="android.permission.READ_SMS" systemfixed="false"/>
+            <permission name="android.permission.SEND_SMS" systemfixed="false"/>
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.WRITE_CONTACTS" systemfixed="false"/>
+            <permission name="android.permission.GET_ACCOUNTS" systemfixed="false"/>
+        </package>
+        <!--  CDM , 70038089@Google Bug ID -->
+        <package name="com.sprint.ms.cdm">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false"/>
+            <permission name="android.permission.CALL_PHONE" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false"/>
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false"/>
+        </package>
+    </sales-code>
+    <sales-code csc="SKC">
+        <!-- KOR SKT Apps -->
+        <package name="com.skt.skaf.A000Z00040">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <package name="com.skt.hps20client">
+            <permission name="android.permission.RECEIVE_WAP_PUSH" systemfixed="false" />
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+        </package>
+        <package name="com.skt.skaf.OA00018282">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+    </sales-code>
+    <sales-code csc="KTC">
+        <!-- KOR KT Apps -->
+        <!--KTOneStore -->
+        <package name="com.kt.olleh.storefront">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <!--KTServiceAgent -->
+        <package name="com.kt.serviceagent">
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="true" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="true" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="true" />
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="true" />
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="true" />
+        </package>
+        <!--KTPushNotiService -->
+        <package name="com.ktpns.pa">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="true" />
+        </package>
+        <package name="com.skt.skaf.OA00018282">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+    </sales-code>
+    <sales-code csc="LUC">
+        <!-- KOR LGU+ Apps -->
+        <package name="com.lguplus.appstore">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <package name="com.lguplus.lgugpsnwps">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="true" />
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="true" />
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="true" />
+        </package>
+        <package name="com.skt.skaf.OA00018282">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <package name="com.lguplus.tsmproxy">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+    </sales-code>
+    <sales-code csc="KOO">
+        <!-- KOR KOO Apps -->
+        <package name="com.skt.skaf.A000Z00040">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <package name="com.lguplus.lgugpsnwps">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="true" />
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="true" />
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="true" />
+        </package>
+        <package name="com.skt.skaf.OA00018282">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+    </sales-code>
+    <!--SRI-N STG USC -->
+    <sales-code csc="USC">
+        <package name="com.LogiaGroup.LogiaDeck">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.WRITE_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.ADD_VOICEMAIL" systemfixed="false" />
+            <permission name="android.permission.USE_SIP" systemfixed="false" />
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+        </package>
+        <package name="com.cequint.ecid">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.WRITE_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.ADD_VOICEMAIL" systemfixed="false" />
+            <permission name="android.permission.USE_SIP" systemfixed="false" />
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+            <revoke-permission name="android.permission.RECEIVE_SMS" />
+            <revoke-permission name="android.permission.SEND_SMS" />
+            <revoke-permission name="android.permission.READ_SMS" />
+            <revoke-permission name="android.permission.READ_CONTACTS" />
+            <revoke-permission name="android.permission.WRITE_CONTACTS" />
+            <revoke-permission name="android.permission.GET_ACCOUNTS" />
+            <revoke-permission name="android.permission.RECEIVE_MMS" />
+        </package>
+        <!-- USCC Call Guardian Buganizer ID: b/70398309 -->
+        <package name="com.uscc.ecid">
+            <permission name="android.permission.READ_CALL_LOG" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.READ_SMS" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+        </package>
+    </sales-code>
+    <sales-code csc="CHA">
+        <!-- CHA HUX and VUX Apps -->
+        <!-- SpectrumCM , 74727029@Google Bug ID -->
+        <package name="com.spectrum.cm.headless">
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.WRITE_EXTERNAL_STORAGE" systemfixed="false" />
+            <permission name="android.permission.PACKAGE_USAGE_STATS" systemfixed="false" />
+            <permission name="android.permission.ACCESS_BACKGROUND_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACTIVITY_RECOGNITION" systemfixed="false" />
+        </package>
+        <package name="com.verizon.loginengine.unbranded">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+    </sales-code>
+    <sales-code csc="CCT">
+        <package name="com.smithmicro.netwise.director.comcast.oem">
+            <permission name="android.permission.ACCESS_COARSE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.ACCESS_FINE_LOCATION" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+        </package>
+        <package name="com.comcast.modesto.vvm.client">
+            <!--   VVM Mobile Buganizer ID: b/28277496 -->
+            <permission name="android.permission.READ_CONTACTS" systemfixed="false" />
+            <permission name="android.permission.WRITE_CONTACTS" systemfixed="false" />
+            <permission name="android.permission.GET_ACCOUNTS" systemfixed="false" />
+            <permission name="android.permission.RECORD_AUDIO" systemfixed="false" />
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.SEND_SMS" systemfixed="false" />
+        </package>
+        <package name="com.verizon.loginengine.unbranded">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+    </sales-code>
+    <sales-code csc="FKR">
+        <package name="com.verizon.loginengine.unbranded">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+    </sales-code>
+	<sales-code csc="ZTA">
+    <!-- LATIN ZTA Apps -->
+        <package name="com.claroColombia.contenedor">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+    </sales-code>
+    <sales-code csc="COM">
+    <!-- LATIN Apps -->
+        <package name="com.claroColombia.contenedor">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <package name="co.sitic.pp">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="true" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="true" />
+            <permission name="android.permission.SYSTEM_ALERT_WINDOW" systemfixed="true" />
+        </package>
+    </sales-code>
+    <sales-code csc="PET">
+    <!-- LATIN Apps -->
+        <package name="co.sitic.pp">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="true" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="true" />
+            <permission name="android.permission.SYSTEM_ALERT_WINDOW" systemfixed="true" />
+        </package>
+    </sales-code>
+    <sales-code csc="TCE">
+    <!-- LATIN Apps -->
+        <package name="com.telcel.contenedor">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+        </package>
+        <package name="com.speedymovil.wire">
+            <permission name="android.permission.READ_PHONE_STATE" systemfixed="false" />
+            <permission name="android.permission.CALL_PHONE" systemfixed="false" />
+            <permission name="android.permission.RECEIVE_SMS" systemfixed="false" />
+            <permission name="android.permission.PROCESS_OUTGOING_CALLS" systemfixed="false" />
+        </package>
+    </sales-code>
+</DefaultGrantPermissions>
+

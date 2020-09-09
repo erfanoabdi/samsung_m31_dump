@@ -1,0 +1,30 @@
+# bootchecker rc file, 
+# SA part, System team.
+
+on early-init
+    #Read ahead system/fonts and system/framework
+    readahead /system/framework --fully
+
+service bootchecker /system/bin/bootchecker
+    class late_start
+    user system
+    group system log
+    oneshot
+
+on property:init.svc.zygote=restarting
+    write /dev/freezer/olaf/freezer.state THAWED
+    write /dev/freezer/frozen/freezer.state THAWED
+    restart bootchecker
+
+on property:init.svc.zygote=stopping
+    write /dev/freezer/olaf/freezer.state THAWED
+    write /dev/freezer/frozen/freezer.state THAWED
+
+on property:sys.readahead.inputmethod=1
+    readahead /system/app/SamsungIMEv3.5/oat/arm64/SamsungIMEv3.5.odex --fully
+    readahead /system/app/SamsungIMEv3.5/SamsungIMEv3.5.apk --fully
+    setprop sys.readahead.inputmethod 0
+   
+on property:sys.readahead.touchwiz=1
+    readahead /system/priv-app/TouchWizHome_2017/TouchWizHome_2017.apk --fully
+    setprop sys.readahead.touchwiz 0

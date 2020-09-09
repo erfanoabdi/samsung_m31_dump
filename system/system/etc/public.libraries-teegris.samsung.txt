@@ -1,0 +1,1 @@
+libteecl.teegris.samsung.so

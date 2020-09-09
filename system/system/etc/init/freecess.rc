@@ -1,0 +1,11 @@
+service freecessmonitor /system/bin/freecessmonitor
+    class main
+    user system
+    group system
+    disabled
+
+on property:sys.config.freecess_monitor=true
+    start freecessmonitor
+
+on property:sys.config.freecess_monitor=false
+    stop freecessmonitor

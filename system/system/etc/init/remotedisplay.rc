@@ -1,0 +1,6 @@
+service remotedisplay /system/bin/remotedisplay
+    class main
+    user oem_5386
+    group system inet media_rw drmrpc uhid log
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks

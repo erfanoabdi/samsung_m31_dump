@@ -1,0 +1,5 @@
+<permissions>
+    <privapp-permissions package="com.sec.android.uibcvirtualsoftkey">
+        <permission name="android.permission.SET_PROCESS_LIMIT"/>
+    </privapp-permissions>
+</permissions>

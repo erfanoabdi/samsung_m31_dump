@@ -1,0 +1,7 @@
+<permissions>
+        <privapp-permissions package="com.sec.android.mimage.avatarstickers">
+            <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+            <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>        	
+            <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        </privapp-permissions>        
+</permissions>

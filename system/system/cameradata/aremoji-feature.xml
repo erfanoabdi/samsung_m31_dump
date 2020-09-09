@@ -1,0 +1,92 @@
+<?xml version= "1.0" encoding= "UTF-8"?>
+<resources>
+    <!-- Shootingmode - BACK -->
+    <local name="BACK_CAMERA_SHOOTING_MODE_AUTO" enable="true" visible="true" order="1" />
+    <local name="BACK_CAMERA_SHOOTING_MODE_STICKER" enable="true" visible="true" order="2" />
+
+    <!-- Shootingmode - FRONT -->
+    <local name="FRONT_CAMERA_SHOOTING_MODE_SELFIE" enable="true" visible="true" order="1" />
+    <local name="FRONT_CAMERA_SHOOTING_MODE_STICKER" enable="true" visible="true" order="2" />
+
+    <!-- Capture resolution - BACK -->
+    <local name="BACK_CAMERA_RESOLUTION_19DOT5BY9" value="4624x2136" />
+    <local name="BACK_CAMERA_RESOLUTION_4BY3_LARGE" value="4624x3468" />
+    <local name="BACK_CAMERA_RESOLUTION_4BY3_MEDIUM" value="4624x3468" />
+    <local name="BACK_CAMERA_RESOLUTION_16BY9_LARGE" value="4624x2604" />
+    <local name="BACK_CAMERA_RESOLUTION_16BY9_MEDIUM" value="4624x2604" />
+    <local name="BACK_CAMERA_RESOLUTION_1BY1_LARGE" value="3456x3456" />
+    <local name="BACK_CAMERA_RESOLUTION_1BY1_MEDIUM" value="3456x3456" />
+    <local name="BACK_CAMERA_PICTURE_DEFAULT_RESOLUTION" value="4624x2136" />
+	
+    <!-- Capture resolution - FRONT -->
+    <local name="FRONT_CAMERA_RESOLUTION_19DOT5BY9" value="4000x1844" />
+    <local name="FRONT_CAMERA_RESOLUTION_4BY3_LARGE" value="4000x3000" />
+    <local name="FRONT_CAMERA_RESOLUTION_4BY3_MEDIUM" value="4000x3000" />
+    <local name="FRONT_CAMERA_RESOLUTION_16BY9_LARGE" value="4000x2250" />
+    <local name="FRONT_CAMERA_RESOLUTION_16BY9_MEDIUM" value="4000x2250" />
+    <local name="FRONT_CAMERA_RESOLUTION_1BY1_LARGE" value="2992x2992" />
+    <local name="FRONT_CAMERA_RESOLUTION_1BY1_MEDIUM" value="2992x2992" />
+    <local name="FRONT_CAMERA_PICTURE_DEFAULT_RESOLUTION" value="4000x1844" />
+	
+    <!-- Recording resolution - BACK -->
+    <local name="BACK_CAMERA_RECORDING_DEFAULT_RESOLUTION" value="1920x1080"/>
+    <local name="BACK_CAMERA_RECORDING_MIN_RESOLUTION" value="640x480"/>
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_3840X2160" value="true" hdr="true" hdr10="false" preview-size="1920x1080" snapshot-support="true" snapshot-size="4624x2604" vdis="false" super-vdis="false" effect="false" object-tracking="false" external-storage-support="true" uw-support="false"/>
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_2336X1080" value="true" hdr="true" hdr10="false" preview-size="2336x1080" snapshot-support="true" snapshot-size="4624x2136" vdis="true" super-vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X1080" value="true" hdr="true" hdr10="false" preview-size="1920x1080" snapshot-support="true" snapshot-size="4624x2604" vdis="true" super-vdis="true" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1440X1440" value="true" hdr="true" hdr10="false" preview-size="1088x1088" snapshot-support="true" snapshot-size="3456x3456" vdis="false" super-vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_1280X720" value="true" hdr="true" hdr10="false" preview-size="1280x720" snapshot-support="true" snapshot-size="4624x2604" vdis="true" super-vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="BACK_CAMCORDER_RESOLUTION_FEATURE_MAP_176X144" value="true"/>
+
+    <!-- Recording resolution - FRONT -->
+    <local name="FRONT_CAMERA_RECORDING_DEFAULT_RESOLUTION" value="1920x1080"/>
+    <local name="FRONT_CAMERA_RECORDING_MIN_RESOLUTION" value="640x480"/>
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_3840X2160" value="true" hdr="true" hdr10="false" preview-size="1920x1080" snapshot-support="true" snapshot-size="4000x2250" vdis="false" super-vdis="false" effect="false" object-tracking="false" external-storage-support="true"/>
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_2336X1080" value="true" hdr="true" hdr10="false" preview-size="2336x1080" snapshot-support="true" snapshot-size="4000x1844" vdis="false" super-vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1920X1080" value="true" hdr="true" hdr10="false" preview-size="1920x1080" snapshot-support="true" snapshot-size="4000x2250" vdis="false" super-vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1440X1440" value="true" hdr="true" hdr10="false" preview-size="1088x1088" snapshot-support="true" snapshot-size="2992x2992" vdis="false" super-vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_1280X720" value="true" hdr="true" hdr10="false" preview-size="1280x720" snapshot-support="true" snapshot-size="4000x2250" vdis="false" super-vdis="false" effect="true" object-tracking="false" external-storage-support="true"/>
+    <local name="FRONT_CAMCORDER_RESOLUTION_FEATURE_MAP_176X144" value="true"/>
+
+    <!-- Thermistor Temperature - Only JPN used -->
+    <local name="OVERHEAT_LIMITATION_TEMP" value="640" />
+    <local name="OVERHEAT_AVAILABLE_TEMP" value="550" />
+    <local name="FLASH_OVERHEAT_LIMITATION_TEMP" value="440" />
+
+    <!-- Performance features -->
+    <local name="SUPPORT_DVFS_DURING_BODY_TRACKING" value="true" />
+    <local name="CONFIG_DVFS_CPU_MIN_CLOCK_DURING_BODY_TRACKING" value="1144000" />
+    <local name="CONFIG_DVFS_GPU_MIN_CLOCK_DURING_BODY_TRACKING" value="560000" />
+
+
+    <!-- Sticker mode features -->
+    <local name="SUPPORT_FACE_AR" value="true" />
+    <local name="SUPPORT_WATERMARK" value="true"/>
+    <local name="SUPPORT_HUMAN_TRACKING" value="false"/>
+    <local name="SUPPORT_TRACKING_MODE_BASIC" value="true"/>
+    <local name="SUPPORT_TRACKING_MODE_MASK" value="true"/>
+    <local name="SUPPORT_AR_CORE" value="false"/>
+    <local name="SUPPORT_TRACKING_MODE_MOTION_FIGURINE" value="false"/>
+    
+    <!-- ARCore supported image size -->
+    <local name="DEFAULT_ARCORE_IMAGE_SIZE" value="1920x1080" />
+
+    <!-- Shutter LP features -->
+    <local name="SUPPORT_TAP_AND_HOLD_CAMERA_BUTTON" value="true" />
+
+    <!-- Picture ratio in quick seting -->
+    <local name="SUPPORT_PICTURE_RATIO_QUICK_SETTING" value="true" />
+
+    <!-- Floating camera button -->
+    <local name="SUPPORT_FLOATING_CAMERA_BUTTON" value="false"/>
+
+    <!-- Graphic rendering mode -->
+    <local name="SUPPORT_RENDERING_MODE" value="mass"/>
+
+    <!-- Support Notch Display --> 
+	<local name="SUPPORT_DISPLAY_CUTOUT_AREA" value="true" />
+	
+	<!-- Notch Display Animation -->
+    <local name="DISPLAY_CUTOUT_ANIMATION_INFO" num-of-display-cutout="1" display-cutout-0-type="2" display-cutout-0-left="153" display-cutout-0-top="0" display-cutout-0-right="208" display-cutout-0-bottom="35"/>
+    <local name="DISPLAY_CUTOUT_POSITION" value="1" />
+</resources>

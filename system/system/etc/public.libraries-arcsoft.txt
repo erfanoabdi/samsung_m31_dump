@@ -1,0 +1,7 @@
+liblow_light_hdr.arcsoft.so
+libface_landmark.arcsoft.so
+libFacialStickerEngine.arcsoft.so
+libhigh_dynamic_range.arcsoft.so
+libArcSoftFaceAlignment.arcsoft.so
+libArcSoft3DStickerEngine.arcsoft.so
+libarc_layer_sgl.arcsoft.so

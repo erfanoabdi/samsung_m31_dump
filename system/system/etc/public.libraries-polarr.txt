@@ -1,0 +1,3 @@
+libBestComposition.polarr.so
+libFeature.polarr.so
+libTracking.polarr.so

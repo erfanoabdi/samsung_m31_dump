@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <library name="semcamera2" file="/system/framework/semcamera2.jar"/>
+</permissions>
